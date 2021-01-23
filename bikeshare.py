@@ -18,7 +18,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
-        city = input('please enter either chicago or new york city or washington: ')
+        city = input('please enter either chicago or new york city or washington: ').lower()
         if city in ('chicago','new york city','washington'):
             break
         else:
@@ -168,7 +168,7 @@ def user_stats(df):
     # earliest year of birth                 
     try:
         earliest_year = df['Year Of birth'].min()
-        print('the earliest year is:',earliest_year)              
+        print('the earliest year of birth is:',earliest_year)              
     except KeyError:
          print('Sorry! no data is available')             
     # most recent year of birth
@@ -189,12 +189,12 @@ def user_stats(df):
 
 
 def display_data(df):
-    x = input('would you like to view 5 rows of individual data? Enter yes or no: ')
+    view_more = input('would you like to view 5 rows of individual data? Enter yes or no: ')
     start_loc = 0
-    while(x == 'yes'):
+    while(view_more == 'yes'):
         print(df.iloc[start_loc:start_loc+5])
         start_loc+=5
-        x = input('would you like to continue? Enter yes or no: ').lower()
+        view_more = input('would you like to continue? Enter yes or no: ').lower()
     
 def main():
     while True:
