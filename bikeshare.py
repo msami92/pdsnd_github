@@ -168,7 +168,7 @@ def user_stats(df):
     # earliest year of birth                 
     try:
         earliest_year = df['Year Of birth'].min()
-        print('the earliest year is:',earliest_year)              
+        print('the earliest year of birth is:',earliest_year)              
     except KeyError:
          print('Sorry! no data is available')             
     # most recent year of birth
