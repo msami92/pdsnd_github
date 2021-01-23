@@ -189,12 +189,12 @@ def user_stats(df):
 
 
 def display_data(df):
-    x = input('would you like to view 5 rows of individual data? Enter yes or no: ')
+    view_more = input('would you like to view 5 rows of individual data? Enter yes or no: ')
     start_loc = 0
-    while(x == 'yes'):
+    while(view_more == 'yes'):
         print(df.iloc[start_loc:start_loc+5])
         start_loc+=5
-        x = input('would you like to continue? Enter yes or no: ').lower()
+        view_more = input('would you like to continue? Enter yes or no: ').lower()
     
 def main():
     while True:
