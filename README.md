@@ -12,9 +12,9 @@ In this project the user explores bikeshare data in three major cities:
 
 ### Files used
 The project includes the following files:
- *bikeshare.py
- *.gitignore
- *README.md
+ * bikeshare.py
+ * .gitignore
+ * README.md
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
