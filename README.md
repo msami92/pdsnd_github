@@ -5,7 +5,10 @@ This project was created on Dec 25, 2020.
 Explore US bikeshare data
 
 ### Description
-Describe what your project is about and what it does
+In this project the user explores bikeshare data in three major cities:
+ * Chicago
+ * New York City
+ * Washongton
 
 ### Files used
 Include the files used
